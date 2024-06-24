@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --bg-color: #ffffff;
+    --main-color: #8e2424;
+    --sec-color: rgba(195, 25, 25, 0.03);
+    --footer-color: #f9fafb;
+    --main-font-color: #667085;
+    --sec-font-color: #3a404e;
+    --third-font-color: #101828;
+    --main-font: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+/* HEADER */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1.5em 0;
+}
+
+.nav__logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-link {
+    color: var(--sec-font-color);
+    font-size: 1.13rem;
+    margin-left: 0.5em;
+}
+
+.nav__options {
+    width: 50%;
+    padding: 0 5em 0 1em;
+}
+
+.nav__options-link {
+    margin: 0 2em;
+    color: var(--main-font-color);
+    transition: 0.3s;
+}
+
+.nav__options-link:hover {
+    color: var(--main-color);
+}
+
+.nav__buttons {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__buttons-link {
+    color: var(--main-font-color);
+}
+
+.nav__buttons-link:hover {
+    color: var(--main-color);
+}
+
+.cad {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 1em;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cad:hover {
+    background-color: var(--third-font-color);
+    color: var(--bg-color);
+}
+
+/* SOBRE NÓS */
+.about {
+    width: 43%;
+    text-align: center;
+    margin: 6em auto 10em;
+}
+
+.about__span {
+    color: var(--main-color);
+}
+
+.about__title {
+    color: var(--third-font-color);
+    margin: 1.5em 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about__text {
+    color: var(--main-font-color);
+    font-size: 1.25rem;
+}
+
+/* RESULTADOS */
+.results {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.results__data {
+    width: 15%;
+}
+
+.results__data-title {
+    color: var(--main-color);
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.results__data-span {
+    color: var(--third-font-color);
+    font-size: 1.13rem;
+}
+
+.results__data-text {
+    margin-top: 0.75em;
+    margin-bottom: 6em;
+    color: var(--main-font-color);
+}
+
+/* VAGAS ABERTAS */
+.hiring {
+    width: 100%;
+    text-align: center;
+    margin: 6em 0;
+}
+
+.hiring__span {
+    color: var(--main-color);
+    font-size: 0.87rem;
+    padding: 0.6em;
+    background-color: var(--sec-color);
+    border-radius: 25px;
+}
+
+.hiring__title {
+    color: var(--third-font-color);
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 1em 0 1.25em;
+}
+
+.hiring__text {
+    color: var(--main-font-color);
+}
+
+.hiring__img {
+    margin: 4em 0;
+}
+
+.hiring__box {
+    width: 40%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.hiring__jobtitle {
+    color: var(--third-font-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+    margin-top: 4em;
+}
+
+.hiring__job {
+    margin: 1.5em 0;
+}
+
+.hiring__job-box {
+    border: 1px solid var(--main-font-color);
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.hiring__job-desc {
+    margin-bottom: 2rem;
+    color: var(--third-font-color);
+    font-size: 1.13rem;
+}
+
+.hiring__job-time,
+.hiring__job-payment {
+    color: var(--main-font-color);
+}
+
+.hiring__job-time {
+    margin-right: 1.5rem;
+}
+
+/* DEPOIMENTOS */
+
+.testimony {
+    width: 80%;
+    margin: 6em auto;
+    padding: 4em 0;
+    border-radius: 15px;
+    background-color: var(--sec-color);
+    text-align: center;
+}
+
+.testimony__title {
+    color: var(--main-color);
+    font-size: 0.87rem;
+    padding: 20em;
+}
+
+.testimony__subtitle {
+    color: var(--third-font-color);
+    font-size: 2.25rem;
+    margin: 1em 4.5em;
+}
+
+.testimony__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony__img {
+    margin: 1em 0;
+}
+
+.testimony__avatar-name {
+    color: var(--third-font-color);
+}
+
+.testimony__avatar-occupation {
+    color: var(--main-font-color);
+    font-size: 0.87rem;
+    margin: 0.5rem 0;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background-color: var(--footer-color);
+    text-align: center;
+    padding: 4em 0;
+}
+
+.footer__title {
+    color: var(--third-font-color);
+    font-size: 2.25em;
+    margin: 1.25em 0;
+}
+
+.footer__text {
+    color: var(--main-font-color);
+    font-size: 1.25rem;
+    margin-bottom: 2.5em;
+}
+
+.footer__email {
+    border: 1px solid var(--main-font-color);
+    border-radius: 10px;
+    padding: 1.2em 7em;
+    margin-right: 1em;
+}
+
+.footer__btn {
+    background-color: var(--main-color);
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    color: var(--bg-color);
+}
+
+.footer__copyright {
+    color: var(--main-font-color);
+    margin: 2em 0;
+}
